@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, button, textarea {
+    font: 600 18px Nunito, sans-serif;
+    
+}
+
+body{
+    background-color: #e4e4e4;
+}
+
+/* HEADER */
+header{
+    width: auto;
+    height: 120px;
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    padding: 30px;
+}
+
+header h1{
+    display: block;
+    margin: 0 auto 0 0;
+    color: white;
+}
+
+header #website-logo{
+    margin: 0 auto 0 0 ;
+}
+
+header #website-logo p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+header #image-profile{
+    width: 120px;
+    text-align: right;
+
+    text-align: center;
+}
+
+header #image-profile img{
+    margin: 0 auto;
+    height: 40px;
+}
+
+header p{
+    color: white;
+    font-weight: 800;
+    display: block;
+}
+
+/*container*/
+
+#container{
+    width: min(90vw, 80%);
+    margin: 2% auto;
+    padding: 20px;
+
+
+}
+
+#container h1{
+    text-align: center;
+    color:#393f53;
+    margin-bottom: 30px;
+}
+
+#options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container #add-anotation{
+    margin: 0 auto 0 0 ;
+
+}
+
+#container #add-anotation a{
+    text-decoration: none;
+    color: #969cb3;
+}
+
+#container #add-anotation a:hover{
+    color: #4289aa;
+}
+
+#container #icon-options{
+    display: flex;
+    color: white;
+}
+
+#container #icon-options p{
+    padding: 10px;
+    color: #969cb3;
+    
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+
+/*table*/
+
+#notes-section{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    background: transparent;
+}
+
+#data-table{
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    color: var(--data-table-color);
+}
+
+table th{
+    background: rgb(255, 255, 255);
+    
+    font-weight: normal;
+    padding: 1rem;
+
+    text-align: left;
+    color: #969cb3;
+    
+}
+
+table tbody tr{
+    opacity: .7;
+}
+
+table tbody tr:hover{
+    opacity: 1;
+}
+
+table td{
+    background:  rgb(255, 255, 255);
+    padding: 1rem;
+}
+
+td.description{
+    color: #919eca;
+}
+
+td.income{
+    color: #919eca;
+}
+
+td.date{
+    color:#919eca;
+}
+
+table thead tr th:first-child, 
+table tbody tr td:first-child{
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead tr th:last-child, 
+table tbody tr td:last-child{
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
+#teste{
+    background-color: white;
+    
+    display: block;
+    width: 97%;
+
+    margin: 0 auto ;
+    
+}
+
+#teste p{
+    padding: 10px;
+    color: #515e88;
+}
+
+/* footer */
+
+footer{
+    /*background: linear-gradient(329.54deg, #eee 0%, #d4d3d3 100%);*/
+
+    position: fixed;
+    bottom: 0;
+    
+    width: 100%;
+    height: 60px;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ 
+}   
+
+footer p{
+    color: #969cb3  ;
+    font-size: smaller;
+}
