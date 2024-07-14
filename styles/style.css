@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding: 0;
@@ -211,4 +212,81 @@ footer{
 footer p{
     color: #969cb3  ;
     font-size: smaller;
+}
+
+
+/* LOGIN AND REGISTER PAGE */
+
+.lr-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+}
+
+#form{
+    border: 2px solid;
+    border-color: #e4e4e4;
+    padding: 50px;
+
+    border-radius: 20px;
+}
+
+#form h1{
+    text-align: center;
+    color: white;
+
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.input-div{
+    margin: 10px 0;
+    border: none;
+}
+
+.input-div input{
+    border: none;
+    padding: 16px;
+
+    border-radius: 20px;
+    color: #6f6f6f;
+}
+
+#submit{
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#button-lr{
+    padding: 16px;
+    width: 100%;
+
+    border: 2px solid;
+    border-color: #e4e4e4;
+    padding: 20px;
+
+    border-radius: 100px;
+
+    color: #6f6f6f;
+}
+
+#a-text{
+    display: block;
+    text-align: center;
+}
+
+#form a{
+    margin: 0 auto 0;
+    text-decoration: none;
+    
+    color: white;
+}
+
+#button-lr:hover{
+    background-color: #e4e4e4;
+    cursor: pointer;
 }
