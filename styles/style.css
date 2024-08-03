@@ -80,13 +80,10 @@ header p{
 #options{
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-#container #add-anotation{
-    margin: 0 auto 0 0 ;
+    justify-content: space-between;
 
 }
+
 
 #container #add-anotation a{
     text-decoration: none;
@@ -100,6 +97,7 @@ header p{
 #container #icon-options{
     display: flex;
     color: white;
+    
 }
 
 #container #icon-options p{
@@ -305,6 +303,8 @@ footer p{
     display:flex;
     align-items:center;
     flex-direction:column;
+
+    justify-content: center;
 }
 
 
@@ -453,6 +453,19 @@ footer p{
 
     .container-2 > aside .legenda{
         text-align: center;
+    }
+
+    header h1{
+        display: none;
+    }
+
+    #options{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #container  #icon-options{
+        display: none;
     }
 }
 
