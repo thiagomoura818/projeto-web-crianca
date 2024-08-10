@@ -20,6 +20,9 @@
         </div>
     </header>
     <main id="container">
+
+        <div class="barradeprogresso">Barra de progresso:   <progress max="100" value="50"></progress></div>
+        <dialog class="nuvem" open><strong>Parabéns!</strong> O seu progresso subiu!</dialog>
        
         <section id="options">
             <div id="add-anotation">
@@ -64,7 +67,22 @@
             -- Resumo sobre verbo -- 
                 É uma classe gramatical que flexiona em número e pessoa, apresentando formas diferentes para o singular e o plural e para a 1ª, a 2ª e a 3ª pessoas.Os modos verbais são o indicativo, o subjuntivo e o imperativo.Há diversos tempos verbais de acordo com o modo verbal; em geral, dividem-se em pretérito (ou passado), presente e futuro. Há três formas nominais do verbo: infinitivo, gerúndio e particípio.
             Os verbos podem ser classificados como regulares, irregulares, anômalos, abundantes, defectivos e impessoais.
-            São três as vozes verbais: a voz ativa, a voz passiva e a voz reflexiva.</p></div> 
+            São três as vozes verbais: a voz ativa, a voz passiva e a voz reflexiva.
+        </p></div> 
+        <h2 class ="h2video">Vídeo de apoio</h2>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wERtXzsc088?si=RuVU2S7fjY4n8e3X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+            <div class="input-div" id = "range">
+                <label for="txttamanhocaixa">
+                    Tamanho da Caixa:
+                    <output id="outtamanhocaixa"></output>  
+                    (será implementado no futuro)
+                </label>
+                <input type="range" id ='txttamanhocaixa' name ='tamanhocaixa' min="0" max="10"  oninput="outtamanhocaixa.value = txttamanhocaixa.value">   
+            </div>
+
     </main>
     <footer>
         <p>Desenvolvido por Fillipe e Thiago - CEFETMG</p>

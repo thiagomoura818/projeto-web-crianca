@@ -22,9 +22,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 30px;
 }
+
 
 header h1{
     display: block;
@@ -32,9 +32,19 @@ header h1{
     color: white;
 }
 
-header #website-logo{
-    margin: 0 auto 0 0 ;
+.h2video{
+    display: block;
+    margin: 20px 10px 0px 10px;
+    padding-left: 10px;
+    background-color: #1c889e;
+    color:white;
+    border-radius: 10px 10px 0px 0px;
 }
+
+header #website-logo{
+    margin: 0 auto 0 0;
+}
+
 
 header #website-logo p{
     display: flex;
@@ -60,6 +70,61 @@ header p{
     font-weight: 800;
     display: block;
 }
+/* barra de progresso */
+
+div.barradeprogresso{
+    color:#00C7C7;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div.barradeprogresso progress{
+    width: 50%;
+    margin-left: 30px;   
+}
+
+/* dialog */
+.nuvem {
+    position: fixed;
+    background: #fff;
+    top: 15%; 
+    left: 80%;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 10px;
+    width: 160px;
+    text-align: center;
+    z-index: 1000;
+  }
+  .nuvem strong{
+    font-size: 1.5em;
+  }
+  
+  .nuvem:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #000 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -15px;
+    left: 25px;
+  }
+  
+  .nuvem:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+    z-index: 2;
+    bottom: -13px;
+    left: 25px;
+  }
 
 /*container*/
 
@@ -186,6 +251,27 @@ table tbody tr td:last-child{
     padding: 10px;
     color: #515e88;
 }
+/* video */
+
+div.video{
+    background-color:#35c7c7be ;
+    margin: 20px 10px;
+    padding: 20px;
+    padding-bottom: 53.35%;
+    position: relative;
+    margin-top: 0;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
 
 /* footer */
 
@@ -249,6 +335,15 @@ footer p{
 
     border-radius: 20px;
     color: #6f6f6f;
+}
+
+.input-div  p{
+    color: white;
+}
+
+#range.input-div input {
+    padding: 0px;
+    margin-left: 10px;
 }
 
 #submit{
@@ -396,18 +491,26 @@ footer p{
 
 /* Dispositivos muito pequenos(celulares, abaixo de 600px)*/
 @media only screen and (max-width: 600px){
-
+    .nuvem{
+        left: 70%;
+    }
 }
 
 /*Dispositivos pequenos(tablets em modo retrato, ou celulares grandes, a partir de 600px)*/
 @media only screen and (min-width:600px){
-
+    .nuvem{
+        left: 70%;
+    }
 }
+
 
 /*Dispositivos médios(tablets em modo paisagem, a partir de 768px)*/
 @media only screen and (min-width: 768px){
-
+    .nuvem{
+        left: 80%;
+    }
 }
+
 
 /*Dispositivos grandes(laptops/desktops, a partir de 992px)*/
 @media only screen and (max-width: 992px){
