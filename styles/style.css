@@ -32,14 +32,6 @@ header h1{
     color: white;
 }
 
-.h2video{
-    display: block;
-    margin: 20px 10px 0px 10px;
-    padding-left: 10px;
-    background-color: #1c889e;
-    color:white;
-    border-radius: 10px 10px 0px 0px;
-}
 
 header #website-logo{
     margin: 0 auto 0 0;
@@ -252,6 +244,15 @@ table tbody tr td:last-child{
     color: #515e88;
 }
 /* video */
+
+.h2video{
+    display: block;
+    margin: 20px 10px 0px 10px;
+    padding-left: 10px;
+    background-color: #1c889e;
+    color:white;
+    border-radius: 10px 10px 0px 0px;
+}
 
 div.video{
     background-color:#35c7c7be ;
