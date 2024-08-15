@@ -14,6 +14,90 @@ body{
     background-color: #e4e4e4;
 }
 
+
+  
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: visible;
+    opacity: 1;
+
+    z-index: 999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 35px;
+    background: #fff;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 800px;
+
+    position: relative;
+
+
+}
+
+
+.popup > #popup-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup > #popup-info ion-icon{
+    color: red;
+    font-size: 27px;
+}
+
+.popup > #popup-info ion-icon:hover{
+    color: rgb(219, 4, 4);
+    font-size: 27px;
+}
+
+.popup #form-modal{
+    padding: 1em;
+   /* background-color: red;*/
+   
+    background: green;
+}
+
+
+.popup form label{
+    display: block;
+    font-weight: bold;
+}
+
+.popup form input{
+    display: block;
+    width: 100%;
+    padding: .5em;
+}
+
+.popup form textarea{
+    display: block;
+    width: 100%;
+    padding: .5em;
+    resize: none;
+
+    height: 50vh;
+
+}
+
+.popup form button{
+    margin-top: 1.5em;
+}
+
 /* HEADER */
 header{
     width: auto;
@@ -86,7 +170,7 @@ div.barradeprogresso progress{
     padding: 10px;
     width: 160px;
     text-align: center;
-    z-index: 1000;
+    z-index: 998;
   }
   .nuvem strong{
     font-size: 1.5em;
@@ -296,6 +380,8 @@ footer p{
     color: #969cb3  ;
     font-size: smaller;
 }
+
+
 
 
 /* LOGIN AND REGISTER PAGE */

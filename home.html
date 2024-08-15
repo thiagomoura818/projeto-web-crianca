@@ -9,6 +9,32 @@
     <title>Minha página</title>
 </head>
 <body>
+    
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <div id="popup-info">
+                <h2>Adicionar anotação</h2>
+                <ion-icon name="close-circle"></ion-icon>
+            </div>  
+            <form>
+                <div>
+                    <label>Disciplina</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Título</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Anotação</label>
+                    <textarea name="texto-anotacao" id="texto-anotacao"></textarea>
+                </div>
+
+                <button>Adicionar anotação</button>
+            </form>
+            
+        </div>
+    </div>
     <header>
         <div id="website-logo">
             <p><ion-icon name="accessibility-outline"></ion-icon></p>
@@ -83,7 +109,8 @@
                 <input type="range" id ='txttamanhocaixa' name ='tamanhocaixa' min="0" max="10"  oninput="outtamanhocaixa.value = txttamanhocaixa.value">   
             </div>
 
-    </main>
+        </main>
+
     <footer>
         <p>Desenvolvido por Fillipe e Thiago - CEFETMG</p>
     </footer>    
