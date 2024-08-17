@@ -17,7 +17,9 @@ function adicionarAnotacao(event) {
 
     adicionarTabela(disciplina, titulo, descricao);
 
-    alert(descricao);
+    document.querySelector("#disciplina-text").value = " ";
+    document.querySelector("#titulo-text").value = " ";
+    document.querySelector("#anotation-text").value = " ";
     fechaModal();
 }
 
@@ -36,13 +38,14 @@ function adicionarTabela(disciplina, titulo, descricao) {
 
     let htmlDescricao = `
         <tr class="descricao-row" id="descricao-${index}" style="display: none;">
-            <td colspan="4">${descricao}</td>
+            <td colspan="4"><p class="paragraph">${descricao}</p></td>
         </tr>
     `;
-
+            
     let tbody = document.querySelector("tbody");
     const tr = document.createElement('tr');
     tr.innerHTML = html;
+    tr.dataset.index = index;
 
     tbody.appendChild(tr);
     tbody.insertAdjacentHTML('beforeend', htmlDescricao);

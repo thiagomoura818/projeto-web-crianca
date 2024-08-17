@@ -34,6 +34,11 @@ body{
 
 }
 
+.paragraph{
+    text-align: justify;
+    font-size: large;
+}
+
 .popup {
     margin: 70px auto;
     padding: 35px;
@@ -337,13 +342,13 @@ table tbody tr td:last-child{
     display: block;
     margin: 20px 10px 0px 10px;
     padding-left: 10px;
-    background-color: #1c889e;
+    background-color: #07accd;
     color:white;
     border-radius: 10px 10px 0px 0px;
 }
 
 div.video{
-    background-color:#35c7c7be ;
+    background-color:#03f1f1e2 ;
     margin: 20px 10px;
     padding: 20px;
     padding-bottom: 53.35%;
