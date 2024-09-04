@@ -16,16 +16,17 @@
             <h1>Login</h1>
             <form action="">
                 <div class="input-div">
-                    <input type="text" placeholder="Usuário">
+                    <input type="text" placeholder="Usuário" id="login-usuario" >
                 </div>
                 <div class="input-div">
-                    <input type="password" placeholder="Senha">
+                    <input type="password" placeholder="Senha"  id="login-senha">
                 </div>
+            
                 <div id="a-text">
                     <a href="landing.html">Voltar à página inicial</a>
                 </div>
                 <div id="submit">
-                    <button id="button-lr">Login</button>
+                    <button onclick = 'entrar()' id="button-lr">Login</button>
                 </div>
             </form>
 
@@ -34,5 +35,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+
+    <script src="login.js"></script>
 </body>
 </html>
