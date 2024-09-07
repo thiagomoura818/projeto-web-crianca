@@ -1,5 +1,9 @@
 # QIança - Projeto de Anotações e Aprendizado
 
+![Imagem de Capa](images/landing.svg)  <!-- Substitua pelo URL da sua imagem de capa -->
+
+[![Em Desenvolvimento](https://img.shields.io/badge/status-em%20desenvolvimento-orange)](https://github.com/usuario/projeto-web-crianca)  <!-- Badge indicando o status do projeto -->
+
 Bem-vindo ao QIança, uma plataforma interativa de aprendizado que permite aos usuários adicionar e gerenciar anotações de forma prática e visual.
 
 ## Índice
@@ -20,9 +24,7 @@ O QIança é um projeto que visa fornecer uma plataforma de anotações para fac
 
 - **Cadastro e Login**: Usuários podem se registrar e fazer login na plataforma.
 - **Gerenciamento de Anotações**: Adicione, visualize e exclua anotações.
-- **Barra de Progresso**: Monitore o progresso com uma barra visual.
 - **Vídeo de Apoio**: Assista a um vídeo para obter mais informações e suporte.
-- **Customização**: Ajuste o tamanho da caixa de anotações com um controle deslizante.
 
 ## Pré-requisitos
 
@@ -38,13 +40,13 @@ Para instalar e executar o QIança localmente, siga os passos abaixo:
 1. **Clone o repositório**
 
     ```bash
-    git clone https://github.com/usuario/qianca.git
+    git clone https://github.com/usuario/projeto-web-crianca.git
     ```
 
 2. **Acesse o diretório do projeto**
 
     ```bash
-    cd qianca
+    cd projeto-web-crianca
     ```
 
 3. **Abra o arquivo `index.html` no seu navegador**
@@ -69,7 +71,7 @@ Para instalar e executar o QIança localmente, siga os passos abaixo:
 
 ### Vídeo de Apoio
 
-![Animação de exemplo](images/site.gif)
+![Animação de exemplo](images/site.gif)  <!-- Substitua pelo URL ou caminho do seu GIF de demonstração -->
 
 ## Contribuição
 
