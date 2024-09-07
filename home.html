@@ -44,8 +44,6 @@
         </div>
     </header>
     <main id="container">
-        <div class="barradeprogresso">Barra de progresso: <progress max="100" value="50"></progress></div>
-        <dialog class="nuvem" open><strong>Parabéns!</strong> O seu progresso subiu!</dialog>
         <section id="options">
             <div id="add-anotation">
                 <a onclick="abrirModal()" href="#">+ Adicionar anotação</a>
@@ -85,14 +83,6 @@
             </div>
         </section>
 
-        <div class="input-div" id="range">
-            <label for="txttamanhocaixa">
-                Tamanho da Caixa:
-                <output id="outtamanhocaixa"></output>  
-                (será implementado no futuro)
-            </label>
-            <input type="range" id="txttamanhocaixa" name="tamanhocaixa" min="0" max="10" oninput="outtamanhocaixa.value = txttamanhocaixa.value">   
-        </div>
     </main>
 
     <footer>

@@ -1,49 +1,47 @@
-let usuario = document.querySelector('#cadastro-usuario')
-let senha = document.querySelector('#cadastro-senha')
+// login.js
 
-function cadastrar(){
+// Função para registrar um novo usuário
+function cadastrar(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
 
-    let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+    let usuario = document.querySelector('#cadastro-usuario');
+    let senha = document.querySelector('#cadastro-senha');
 
-    listaUser.push(
-        {
-            userCad: usuario.value,
-            senhaCad: senha.value,
-        }
-    )
-    localStorage.setItem('listaUser', JSON.stringify(listaUser))
+    let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]');
 
+    listaUser.push({
+        userCad: usuario.value,
+        senhaCad: senha.value,
+    });
 
+    localStorage.setItem('listaUser', JSON.stringify(listaUser));
+    window.location.href = 'login.html';
 }
 
-function entrar(){
-    let usuario = document.querySelector('#login-usuario')
+// Função para realizar o login
+function entrar(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
 
-    let senha = document.querySelector('#login-senha')
+    let usuario = document.querySelector('#login-usuario');
+    let senha = document.querySelector('#login-senha');
 
-    let listaUser = []
+    let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]');
 
-    let userValid = {
-      usuario: '',
-      senha: ''
+    const userValid = listaUser.find(item => item.userCad === usuario.value && item.senhaCad === senha.value);
+
+    if (userValid) {
+        alert('Login bem-sucedido!');
+        window.location.href = 'home.html';
+    } else {
+        alert('Usuário ou senha inválidos.');
     }
+}
 
-    listaUser = JSON.parse(localStorage.getItem('listaUser'))
+// Adiciona os event listeners para o carregamento da página
+document.addEventListener('DOMContentLoaded', () => {
+    const formLogin = document.getElementById('login-form');
+    if (formLogin) formLogin.addEventListener('submit', entrar);
 
-    listaUser.forEach((item) => {
-      if(usuario.value == item.userCad && senha.value == item.senhaCad){
-
-          userValid = {
-              usuario: item.userCad,
-              senha: item.senhaCad
-          }
-
-      }
-  })
-
-  if(usuario.value == userValid.usuario && senha.value == userValid.senha){
-      alert('Deu certo')
-  } else{
-      alert('Deu errado')
-  }
-  }
+    const formRegister = document.getElementById('register-form');
+    if (formRegister) formRegister.addEventListener('submit', cadastrar);
+});

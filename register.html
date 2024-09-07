@@ -7,33 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/style.css" rel="stylesheet"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
     <title>Registro</title>
 </head>
 <body>
-    
     <main class="lr-page">
         <section id="form">
             <h1>Registro</h1>
-            <form id="login-form">
+            <form id="register-form">
                 <div class="input-div">
-                    <input type="text" placeholder="Nome do aluno" id="nome-aluno">
-                    
+                    <input type="text" placeholder="Nome do aluno" id="nome-aluno" required>
                 </div>
                 <div class="input-div">
-                    <input type="text" placeholder="Nome do responsável" class="nome">
+                    <input type="text" placeholder="Nome do responsável" class="nome" required>
                 </div>
                 <div class="input-div">
-                    <input type="text" placeholder="Usuário" id="cadastro-usuario">
+                    <input type="text" placeholder="Usuário" id="cadastro-usuario" required>
                 </div>
                 <div class="input-div">
-                    <input type="password" placeholder="Senha" id="cadastro-senha">
+                    <input type="password" placeholder="Senha" id="cadastro-senha" required>
                 </div>
                 <div class="input-div">
                     <p>Data de nascimento:</p>
                     <input type="data" required name="dia" size="2" maxlength="2" id="dia" placeholder="dia">/
                     <input type="data" required name="mes" size="2" maxlength="2" id="mes" placeholder="mês">/
-                    <input type="data" required name="ano" size="4" maxlength="2" id="ano" placeholder="ano">    
+                    <input type="data" required name="ano" size="4" maxlength="4" id="ano" placeholder="ano">
                 </div>
                 <div id="a-text">
                     <a href="landing.html">Voltar à página inicial</a>
@@ -42,14 +39,10 @@
                     <button type="submit" id="button-lr">Registrar-se</button>
                 </div>
             </form>
-
         </section>
     </main>
-    
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
-
     <script src="login.js"></script>
 </body>
 </html>

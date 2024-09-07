@@ -69,7 +69,7 @@ Para instalar e executar o QIança localmente, siga os passos abaixo:
 
 ### Vídeo de Apoio
 
-- Assista ao vídeo de apoio incluído para obter mais informações sobre como usar a plataforma.
+![Animação de exemplo](images/site.gif)
 
 ## Contribuição
 
